@@ -21,7 +21,7 @@ describe('App', () => {
   it('instantiates context provider @instantiate-context-provider', () => {
     const contextProvider = wrapper.find(MockProvider) 
 
-    expect(contextProvider.exists(), 'Did you instantiate the Game.Provider?').toBeTruthy()
+    expect(contextProvider.exists(), 'Did you instantiate the GameContext.Provider?').toBeTruthy()
     expect(contextProvider.props().value, 'Did you pass the state object to the provider as value?').toEqual({
       numTiles: 36,
       playing: false,
