@@ -6,12 +6,12 @@ describe('Game Context', () => {
  
   it('Creates the GameContext @create-game-context', () => {
 
-    expect(React.createContext).toHaveBeenCalled()
+    expect(React.createContext, 'Did you call React.createContext?').toHaveBeenCalled()
   })
 
   it('Sets default context values @set-default-context', () => {
     
-    expect(React.createContext).toHaveBeenCalledWith({
+    expect(React.createContext, 'Did you set the correct default values?').toHaveBeenCalledWith({
       numTiles: 36,
       playing: false,
       handleNumTileChange: expect.any(Function),
