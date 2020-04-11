@@ -5,9 +5,6 @@ const MockConsumer = () => (<div id="MockConsumer" />)
 const MockProvider = () => (<div id="MockProvider" />)
 
 
-
-
-
 describe('App', () => {
 
   let App
