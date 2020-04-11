@@ -1,7 +1,7 @@
 import React from 'react'
 import './Board.css';
 
-const Board = () => {
+const Board = (props) => {
 
   const gridConfig = {
     gridTemplateColumns: `repeat(${Math.sqrt(props.numTiles)}, 1fr)`,
