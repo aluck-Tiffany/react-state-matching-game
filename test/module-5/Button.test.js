@@ -33,7 +33,7 @@ describe('Button', () => {
     const contextConsumer = wrapper.find(MockConsumer) 
     contextConsumer.debug()
 
-    expect(contextConsumer.exists(), 'Did you instantiate the GameContext.Consumer?').toBeTruthy()
+    expect(contextConsumer.exists(), 'Did you instantiate the GameContext.Consumer??').toBeTruthy()
     expect(contextConsumer.children(), 'Did you wrap the button in the Consumer?').toHaveLength(1)
 
     const newWrapper = mount(<Button />)
